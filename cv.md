@@ -47,6 +47,6 @@
 
 
 ### English experience
-- B1/B2
+- *B1/B2*
 - "*ESL courses*" in Minsk/Gomel
 - Communication with foreigners at intercultural meetings
