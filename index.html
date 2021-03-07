@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>CV_page</title>
+</head>
+<body>
+  <!--Start header-->
+  <header class="header">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#">Main</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link  has-subnav" href="#">About me</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">My works</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+  
+
+  </header>
+  <!--End header-->
+
+  <!--Start Sidebar-->
+  <aside class="sidebar">
+    <div class="sidebar__header">
+      <img src="sidebar-header.jpg" alt="">
+    </div>
+  
+    <div class="sidebar__content">
+      <div class="profile">
+        <img class="profile__avatar" src="avatar.jpg" alt="">
+        <div class="profile__name">Nikolay Erosenkov</div>
+        <div class="profile__prof">Software developer
+        </div>
+        <div class="profile__text">
+          <p>Young man, who decided to take his life in his own hands</p>
+        </div>
+          <div class="profile__about">
+            Contact me
+          </div>  
+          <ul class="social">
+            <li class="social__item">
+              <a class="social__link" href="https://www.instagram.com/kolyanchik19/" target="_blank">
+                <img src="instagram.svg" alt="instagram">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="https://vk.com/niternko19" target="_blank">
+                <img src="vk.svg" alt="vk">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="https://t.me/kolyanchik19" target="_blank">
+                <img src="telegram.svg" alt="telegram" width="25">
+              </a>
+            </li>
+          </ul>
+          <div class="mail">erosenkov2017@gmail.com</div>
+        
+      </div><!-- /.profile -->
+    </div><!-- /.sidebar__content -->
+  
+    <div class="sidebar__footer">
+      <a href="https://rs.school/js/" class="rsschool" target="blank">
+        <img src="rs_school_js.svg" alt="rs_school_js" class="rsschool__image" width="80">
+      </a>
+      <a href="https://github.com/G1nger19" class="github" target="_blank">
+        <img src="github.svg" alt="github" class="github__image">
+      </a>
+    </div>
+  </aside>
+  <!--End Sidebar-->
+
+  <!--start main-->
+  <main class="main">
+    <div class="container">
+      <h1 class="info__header">Information</h1>
+    <section class="info__item">
+      <h2 class="info__item__header">Skills</h2>
+      <ul class="skills">
+        <li class="skills__item">HTML/CSS/JavaScrip</li>
+        <li class="skills__item">Python</li>
+        <li class="skills__item">C/C++</li>
+        <li class="skills__item">VS Code</li>
+        <li class="skills__item">MS Word/Excel/Access</li>
+        <li class="skills__item">Figma</li>
+      </ul>
+    </section>
+    <section class="info__item">
+      <h2 class="info__item__header">Example of task and code</h2>
+      <ul class="task">
+        <li class="task__description">
+          <p><i>Input:</i> <b>n</b> and <b>k</b> ( n,k more than 0 and less then 10^5 )</p>
+          <p><i>Output:</i> <b>number of times </b>when <b>k</b> occurs in the table <b>n * n</b></p>
+        </li>
+        <li class="task__code">
+          <p>Code:</p>
+          <pre class="code__example">
+  def solution():
+    count = 0
+    n , k = map(int , input().split())
+    for i in range(2, n + 1):
+      if k % i == 0 and k &lt;= n * i :      
+        count +=1 
+      if k &lt;=n: 
+        count +=1 
+    print(count) 
+  solution()
+          </pre>
+        </li>
+      </ul>
+    </section>
+    <section class="info__item">
+      <h2 class="info__item__header">Work experience</h2>
+      <p class="info__item__description">You can find some projects on my <a href="https://github.com/G1nger19/" target="_blank">github</a> page</p>
+    </section>
+    <section class="info__item">
+      <h2 class="info__item__header">Education</h2>
+      <ul class="education__list">
+        <li class="education__item">2nd year of study as an "<i>information technology engineer</i>"</li>
+        <li class="education__item">"<i>Introduction to python</i>" from <b>Coursera</b></li>
+        <li class="education__item">"<i>Html/CSS/JavaScript fundamentals</i>" from <b>Coursera</b></li>
+        <li class="education__item">"<i>Programming and algorithms fundamentals with C/C++</i>"</li>
+        <li class="education__item">Participation in the selection to the programm <i>"WgFORGE2020"</i></li>
+        <li class="education__item"><i>Codewars</i> tasks</li>
+      </ul>
+    </section>
+    <section class="info__item">
+      <h2 class="info__item__header">English experience</h2>
+      <ul class="english__list">
+        <li class="english__item">B1/B2 level</li>
+        <li class="english__item"><i>ESL courses</i> in Minsk/Gomel</li>
+        <li class="english__item">Communication with foreigners at intercultural meetings</li>
+      </ul>
+    </section>
+    </div>
+  </main>
+  <!--end main-->
+</body>
+</html>
